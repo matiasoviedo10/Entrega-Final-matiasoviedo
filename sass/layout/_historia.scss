@@ -1,0 +1,29 @@
+.contenedorhistoria {
+    @include display-style-content(flex, center, center);
+    flex-direction: column;
+    color: map-get($color-textos, primario);
+    text-align: justify;
+    margin: $margin-mobile;
+    .titulohistoria {
+        margin: 3% 0%;
+        @include font-styles("$font", 24px, 700);
+    }
+    .historia {
+        white-space: pre-line;
+        @include margin-padding-style(5px, 1px);
+        @include font-styles("$font", 18px, 400);
+    }    
+}
+
+@media (min-width: 992px) {
+    .contenedorhistoria {
+        margin: $margin-desktop;
+        .titulohistoria {
+        font-size: 48px;
+        }    
+        .historia {
+        font-size: 24px;
+        text-align: center;
+        }
+    }
+}

@@ -1,0 +1,66 @@
+.encabezado {
+    align-items: start;
+    margin: $margin-mobile;
+    .img {
+        max-height: 56px;
+    }
+    .navbar-nav {
+        text-align: end;
+        .botonemergencias {
+            text-align: end;
+            button {
+            background-color: map-get($color-fondo-boton, emergencias-1);
+            color: map-get($color-textos, secundario);
+            padding: 12px 16px;
+            @include border-b_radius-style(none, 100px);
+            @include font-styles("$font", 75%, bold)
+            }
+        }
+    }
+    .enlace-botonemergencias {
+        text-decoration: none;
+        button {
+        display: none;
+        }
+    }
+}
+@media (min-width: 992px) {
+    .encabezado {
+        margin: $margin-desktop;
+        .logo img {
+        max-height: 72px;
+        }  
+        .collapse {
+            justify-content: end;
+            text-transform: uppercase;
+            .nav-link {
+                @include font-styles("$font", 16px, bold);
+                @include border-b_radius-style(none, 100px);
+                cursor: pointer;
+                &:hover {
+                    background-color: map-get($color-fondo-boton, boton-texto-1);
+                    color: map-get($color-fondo-boton, boton-texto-2);
+                }
+            }  
+            .botonemergencias {
+                display: none;
+            }              
+        } 
+        .botonemergencias1 {
+            text-align: end;
+            button {
+                display: initial;
+                background-color: map-get($color-fondo-boton, emergencias-1);
+                color: map-get($color-fondo-boton, boton-texto-2);
+                @include border-b_radius-style(none, 100px);
+                @include font-styles("$font", 20px, bold);
+                padding: 12px 16px;
+                cursor: pointer;
+                &:hover {
+                    background-color: map-get($color-fondo-boton, emergencias-2);
+                    color: map-get($color-fondo-boton, boton-texto-3);
+                }
+            }
+        }         
+    }
+}

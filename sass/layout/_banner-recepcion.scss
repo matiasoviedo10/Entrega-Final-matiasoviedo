@@ -1,0 +1,13 @@
+.recepcionconsultorio {
+    margin: $margin-mobile;        
+    .imagenconsultorio {
+    width: 100%;
+    border-radius: $border_radius-stylepage;
+    height: 154px;
+    }    
+}
+@media (min-width: 992px) {
+    .recepcionconsultorio {
+        margin: $margin-desktop;        
+    }
+}

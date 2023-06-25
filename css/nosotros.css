@@ -1,0 +1,414 @@
+/* UTILS */ /* FONT */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+/* MARGENES - CONTENEDORES PRINCIPALES */
+/* BORDES-ESTILOS */
+/* ESTILOS-FUNTES */
+/* ESTILOS-DISPLAY */
+/* ESTILOS-MARGIN-PADDING */
+/* BORDES */
+/* ESTILOS-TEXTO */
+/* ESTILOS-POSICION */
+/* ESTILOS-FORMULARIO */
+/* HEADER */
+.encabezado {
+  align-items: start;
+  margin: 3% 0%;
+}
+.encabezado .img {
+  max-height: 56px;
+}
+.encabezado .navbar-nav {
+  text-align: end;
+}
+.encabezado .navbar-nav .botonemergencias {
+  text-align: end;
+}
+.encabezado .navbar-nav .botonemergencias button {
+  background-color: crimson;
+  color: white;
+  padding: 12px 16px;
+  border: none;
+  border-radius: 100px;
+  font-family: "$font";
+  font-size: 75%;
+  font-weight: bold;
+}
+.encabezado .enlace-botonemergencias {
+  text-decoration: none;
+}
+.encabezado .enlace-botonemergencias button {
+  display: none;
+}
+
+@media (min-width: 992px) {
+  .encabezado {
+    margin: 2% 0%;
+  }
+  .encabezado .logo img {
+    max-height: 72px;
+  }
+  .encabezado .collapse {
+    justify-content: end;
+    text-transform: uppercase;
+  }
+  .encabezado .collapse .nav-link {
+    font-family: "$font";
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+  }
+  .encabezado .collapse .nav-link:hover {
+    background-color: #1A8389;
+    color: white;
+  }
+  .encabezado .collapse .botonemergencias {
+    display: none;
+  }
+  .encabezado .botonemergencias1 {
+    text-align: end;
+  }
+  .encabezado .botonemergencias1 button {
+    display: initial;
+    background-color: crimson;
+    color: white;
+    border: none;
+    border-radius: 100px;
+    font-family: "$font";
+    font-size: 20px;
+    font-weight: bold;
+    padding: 12px 16px;
+    cursor: pointer;
+  }
+  .encabezado .botonemergencias1 button:hover {
+    background-color: gold;
+    color: black;
+  }
+}
+.contenedor2 {
+  position: relative;
+  margin: 3% 0%;
+}
+.contenedor2 .texto {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-35%, -50%);
+}
+.contenedor2 .texto .titulo {
+  font-family: "$font";
+  font-size: 32px;
+  font-weight: 700;
+  color: #1A8389;
+}
+.contenedor2 .texto .titulo .punto-aparte {
+  display: inline-block;
+}
+.contenedor2 .imagenprincipal {
+  width: 100%;
+  height: 154px;
+  border-radius: 20px;
+}
+
+/* VISTA DESKTOP*/
+@media (min-width: 992px) {
+  .contenedor2 {
+    margin: 2% 0%;
+  }
+  .contenedor2 .texto {
+    transform: translate(-50%, -50%);
+  }
+  .contenedor2 .texto .titulo {
+    font-size: 56px;
+  }
+}
+/* MAIN */
+.contenedorprofesionales {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-decoration: none;
+  margin: 3% 0%;
+}
+.contenedorprofesionales .imagendoctores {
+  width: 65%;
+}
+.contenedorprofesionales .nombresdoctores {
+  color: #1A8389;
+  margin: 24px 12px 12px;
+  padding: 0px;
+  font-family: "$font";
+  font-size: 24px;
+  font-weight: 400;
+  text-decoration: overline;
+}
+
+@media (min-width: 992px) {
+  .contenedorprofesionales {
+    margin: 2% 0%;
+  }
+}
+.recepcionconsultorio {
+  margin: 3% 0%;
+}
+.recepcionconsultorio .imagenconsultorio {
+  width: 100%;
+  border-radius: 20px;
+  height: 154px;
+}
+
+@media (min-width: 992px) {
+  .recepcionconsultorio {
+    margin: 2% 0%;
+  }
+}
+.contenedorhistoria {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #1A8389;
+  text-align: justify;
+  margin: 3% 0%;
+}
+.contenedorhistoria .titulohistoria {
+  margin: 3% 0%;
+  font-family: "$font";
+  font-size: 24px;
+  font-weight: 700;
+}
+.contenedorhistoria .historia {
+  white-space: pre-line;
+  margin: 5px;
+  padding: 1px;
+  font-family: "$font";
+  font-size: 18px;
+  font-weight: 400;
+}
+
+@media (min-width: 992px) {
+  .contenedorhistoria {
+    margin: 2% 0%;
+  }
+  .contenedorhistoria .titulohistoria {
+    font-size: 48px;
+  }
+  .contenedorhistoria .historia {
+    font-size: 24px;
+    text-align: center;
+  }
+}
+/* ASIDE */
+.div-turnero {
+  background-color: #1A8389;
+  margin: 3% 0%;
+  padding: 24px;
+  border-radius: 20px;
+}
+.div-turnero .turnero-1 {
+  background-color: white;
+  padding: 16px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+}
+.div-turnero .turnero-1 .tituloturnero {
+  text-align: center;
+  margin: 16px 16px 32px;
+  font-family: "$font";
+  font-size: 32px;
+  font-weight: 700;
+  color: #1A8389;
+}
+.div-turnero .turnero-1 form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.div-turnero .turnero-1 form .label-turnero {
+  font-family: "$font";
+  font-size: inherit;
+  font-weight: 700;
+  color: #1A8389;
+  text-align: center;
+}
+.div-turnero .turnero-1 form .input-turnero {
+  margin: 10px 0px;
+  padding: 1% 10%;
+  color: #1A8389;
+  font-weight: 700;
+  border-radius: 20px;
+  text-align: center;
+}
+.div-turnero .turnero-1 form .contenedor-botonturnero {
+  text-align: center;
+  margin: 16px;
+}
+.div-turnero .turnero-1 form .contenedor-botonturnero .botonturnero {
+  background-color: #1A8389;
+  color: white;
+  padding: 12px 12px;
+  border: none;
+  border-radius: 50px;
+  font-weight: bold;
+  font-family: "Monserrat";
+}
+
+@media (min-width: 992px) {
+  .div-turnero {
+    padding: 3% 25%;
+  }
+  .div-turnero .turnero {
+    padding: 16px 56px;
+  }
+  .div-turnero .turnero .tituloturnero {
+    font-size: 42px;
+  }
+  .div-turnero .turnero form .input-turnero {
+    padding: 1% 10%;
+    margin: 2% 10%;
+  }
+  .div-turnero .turnero form .botonturnero {
+    padding: 3%;
+    margin: 5% 36% 2%;
+  }
+}
+/* FOOTER */
+.piedepagina {
+  background-color: black;
+  margin-top: 3%;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+.piedepagina h6 {
+  color: white;
+}
+.piedepagina .footerubicacion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1px;
+  padding: 16px 1px;
+  text-align: center;
+  height: 100%;
+}
+.piedepagina .footerubicacion .contenedorubicacion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+}
+.piedepagina .footerubicacion .calleubicacion {
+  font-family: "Monserrat";
+  margin: 5px 5px 2.5px;
+  padding: 5px 5px 2.5px;
+}
+.piedepagina .footerubicacion .barrioubicacion {
+  font-family: "Monserrat";
+  margin: 2.5px 5px 5px;
+  padding: 2.5px 5px 5px;
+}
+.piedepagina .footerhorarios {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1px;
+  padding: 16px 1px;
+  text-align: center;
+  height: 100%;
+}
+.piedepagina .footerhorarios .contenedorhorarios {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.piedepagina .footerhorarios .diaslaborales {
+  font-family: "Monserrat";
+  margin: 5px 5px 2.5px;
+  padding: 5px 5px 2.5px;
+}
+.piedepagina .footerhorarios .horarioslaborales {
+  font-family: "Monserrat";
+  margin: 2.5px 5px 5px;
+  padding: 2.5px 5px 5px;
+}
+.piedepagina .iconofooter {
+  width: 56px;
+}
+.piedepagina .footerredes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 1px;
+  padding: 16px 1px;
+  height: 100%;
+}
+.piedepagina .footerredes .contenedorinstagram {
+  width: 48px;
+  height: 48px;
+  margin: 1px;
+  padding: 1px 1px 6px;
+}
+.piedepagina .footerredes .contenedorinstagram .iconoinstagram {
+  width: 48px;
+  height: 48px;
+}
+.piedepagina .footerredes .contenedorwhatsapp {
+  width: 48px;
+  height: 48px;
+  margin: 1px;
+  padding: 6px 1px 1px;
+}
+.piedepagina .footerredes .contenedorwhatsapp .iconowhatsapp {
+  width: 48px;
+  height: 48px;
+}
+
+.registro {
+  background-color: white;
+  flex-wrap: nowrap;
+  border-width: 1px;
+  border-style: solid;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  padding: 5px 0px;
+  align-items: center;
+}
+.registro .contenedorregistro1 {
+  display: flex;
+  align-items: center;
+  margin: 1px;
+  justify-content: center;
+}
+.registro .contenedorregistro1 .iconoregistro {
+  margin: 1px 5px;
+  height: 17.5px;
+}
+.registro .contenedorregistro1 .registronombre1 {
+  margin: 1px 5px;
+  font-size: 12px;
+}
+.registro .contenedorregistro2 {
+  margin: 1px;
+  padding: 1px;
+  text-align: center;
+}
+.registro .contenedorregistro2 .registronombre2 {
+  margin: 1px 5px;
+  padding: 2px 5px;
+  font-size: 12px;
+}
+
+@media (min-width: 992px) {
+  .piedepagina {
+    margin-top: 2%;
+  }
+}
+
+/*# sourceMappingURL=nosotros.css.map */

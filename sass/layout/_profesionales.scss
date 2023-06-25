@@ -1,0 +1,19 @@
+.contenedorprofesionales {
+    @include display-style-content(flex, center, center);
+    flex-direction: column;
+    text-decoration: none;
+    margin: $margin-mobile;
+    .imagendoctores {
+        width: 65%;
+    }   
+    .nombresdoctores {
+        color: map-get($color-textos, primario);
+        @include margin-padding-style(24px 12px 12px, 0px);
+        @include font-styles("$font", 24px, 400);
+        text-decoration: overline;        
+    }     
+}
+@media (min-width: 992px) {
+    .contenedorprofesionales {
+        margin: $margin-desktop};
+    }

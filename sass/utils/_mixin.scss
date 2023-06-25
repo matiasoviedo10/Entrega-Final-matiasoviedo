@@ -1,0 +1,50 @@
+/* ESTILOS-FUNTES */
+@mixin font-styles($font-family, $font-size, $font-weight) {
+    font-family: $font-family;
+    font-size: $font-size;
+    font-weight: $font-weight;
+}
+
+/* ESTILOS-DISPLAY */
+@mixin display-style-content($display, $justify, $align) {
+    display: $display;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin display-style-items($display, $justify, $align) {
+    display: $display;
+    justify-items: $justify;
+    align-items: $align;
+}
+
+/* ESTILOS-MARGIN-PADDING */
+@mixin margin-padding-style($margin, $padding) {
+    margin: $margin;
+    padding: $padding;
+}
+
+/* BORDES */
+@mixin border-b_radius-style($border, $radius) {
+    border: $border;
+    border-radius: $radius;
+} 
+
+/* ESTILOS-TEXTO */
+@mixin text_decoracion-list_style($text_deco, $list_style) {
+    text-decoration: $text_deco;
+    list-style: $list_style;
+}
+
+/* ESTILOS-POSICION */
+@mixin posicionamiento($arriba, $izquierda, $abajo, $derecha) {
+    top: $arriba;
+    left: $izquierda;
+    transform: translate($abajo, $derecha);
+}
+
+/* ESTILOS-FORMULARIO */
+@mixin bor_rad-padd-style($bor_rad, $padd) {
+    border-radius: $bor_rad;
+    padding: $padd;
+}

@@ -1,0 +1,69 @@
+.div-turnero {
+    background-color: map-get($color-fondos, primario);
+    @include margin-padding-style($margin-mobile, 24px);
+    border-radius: $border_radius-stylepage;
+    .turnero-1 {
+        background-color: map-get($color-fondos, secundario);
+        padding: 16px;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        .tituloturnero {
+            text-align: center;
+            margin: 16px 16px 32px;
+            @include font-styles("$font", 32px, 700);
+            color: map-get($color-textos, primario);
+        }      
+        form {
+            @include display-style-content(flex, center, center);
+            flex-direction: column;
+            .label-turnero {
+                @include font-styles("$font", inherit, 700);
+                color: map-get($color-textos, primario);
+                text-align: center;
+            }      
+            .input-turnero {
+                @include margin-padding-style(10px 0px, 1% 10%);
+                color: map-get($color-textos, primario);
+                font-weight: 700;
+                border-radius: 20px;
+                text-align: center;
+            }     
+            .contenedor-botonturnero {
+                text-align: center;
+                margin: 16px;
+                .botonturnero {
+                    background-color: map-get($color-fondo-boton, boton-carousel);
+                    color: map-get($color-fondo-boton, boton-texto-2);
+                    padding: 12px 12px;
+                    border: none;
+                    border-radius: 50px;
+                    font-weight: bold;
+                    font-family: "Monserrat"; 
+                }                
+            }                         
+        }          
+    }    
+}
+
+@media (min-width: 992px) {
+    .div-turnero {
+        padding: 3% 25%;
+        .turnero {
+            padding: 16px 56px;
+            .tituloturnero {
+                font-size: 42px;
+            }      
+            form {
+                .input-turnero {
+                padding:1% 10%;
+                margin: 2% 10%;
+                }
+                .botonturnero {
+                padding: 3%;
+                margin: 5% 36% 2%;
+                } 
+            }               
+        }
+    }
+}

@@ -1,0 +1,36 @@
+/* FONT */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+$font: 'Montserrat', sans-serif;
+
+/* MARGENES - CONTENEDORES PRINCIPALES */
+$margin-mobile: 3% 0%;
+$margin-desktop: 2% 0%;
+
+/* BORDES-ESTILOS */
+$border_radius-stylepage: 20px;
+$border_radius-formulario: 20px;
+
+$color-fondos: (
+    primario: #1A8389,
+    secundario: white,
+    terciario: black,
+);
+
+$color-textos: (
+    primario: #1A8389,
+    secundario: white,
+    terciario: black,
+);
+
+$color-fondo-boton: (
+    emergencias-1: crimson,
+    emergencias-2: gold,
+    boton-carousel: #1A8389,
+    boton-turnero: #1A8389,
+    boton-formulario: #1A8389,
+    boton-texto-1: #1A8389,
+    boton-texto-2: white,
+    boton-texto-3: black,
+);
+
+    

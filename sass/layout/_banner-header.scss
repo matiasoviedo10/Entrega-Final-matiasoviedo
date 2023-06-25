@@ -1,0 +1,35 @@
+.contenedor2 {
+    position: relative;
+    margin: $margin-mobile;
+    .texto {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-35%, -50%);
+        .titulo {
+            @include font-styles("$font", 32px, 700);
+            color: map-get($color-textos, primario);
+            .punto-aparte {
+                display: inline-block;
+            }
+        }        
+    }    
+    .imagenprincipal {
+        width: 100%;
+        height: 154px;
+        border-radius: $border_radius-stylepage;
+    }
+}
+
+/* VISTA DESKTOP*/
+@media (min-width: 992px) {
+    .contenedor2 {
+        margin: $margin-desktop;
+    .texto {
+        transform: translate(-50%, -50%);
+        .titulo {
+        font-size: 56px;
+        }    
+    }
+}
+}

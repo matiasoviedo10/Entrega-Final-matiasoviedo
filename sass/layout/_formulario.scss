@@ -1,0 +1,88 @@
+.contenedor-principal {
+    position: relative;
+    @include display-style-content(flex, center, center);
+    flex-direction: column;
+    margin: $margin-mobile;
+    .contenedor-formulario {
+        position: absolute;
+        background-color: map-get($color-fondos, secundario);
+        @include margin-padding-style(24px, 16px);
+        @include display-style-content(flex, center, none);
+        flex-direction: column;
+        text-align: center;
+        border-radius: $border_radius-formulario;
+        color: map-get($color-textos, primario);
+        width: 90%;
+        .titulo {
+            @include font-styles("$font", 24px, 700);
+            @include margin-padding-style(24px, 0px);
+        }
+        .formulario {
+            display: flex;
+            flex-direction: column;
+            .labelformulario {
+                @include font-styles("$font", 24px, 700);
+                @include margin-padding-style(10px 0px, 0px);
+                color: map-get($color-textos, primario);
+            }
+            .inputformulario {
+                @include bor_rad-padd-style(10px, 5px);
+                color: map-get($color-textos, primario);
+            }
+            .labelformulario1 {
+                margin-top: 12px;
+            }
+            textarea {
+                @include bor_rad-padd-style(20px, 12px);
+                color: map-get($color-textos, primario);
+                height: 100px;
+            }   
+            .botoncontacto {
+                background-color: map-get($color-fondos, primario);
+                color: map-get($color-textos, secundario);
+                @include font-styles("$font", 16px, bold);
+                @include margin-padding-style(10% 30% 2%, 4%);
+                @include border-b_radius-style(none, 100px)
+            }   
+        }
+    }
+    .contenedor-img {
+        width: 100%;
+        .img-formulario {
+        width: 100%;
+        height: 650px;
+        border-radius: $border_radius-stylepage;
+        }           
+    }
+}
+
+@media (min-width: 992px) {
+    .contenedor-principal {
+        margin: $margin-desktop;
+        .contenedor-formulario {
+            padding: 1% 6%;
+            width: 50%;
+            .titulo {
+                font-size: 42px;
+            } 
+            .formulario {
+                margin: 0% 3%; 
+                textarea {
+                    @include bor_rad-padd-style(20px, 100px);
+                    color: map-get($color-textos, primario);
+                    height: 100px;
+                }     
+                .botoncontacto {
+                    @include margin-padding-style(5% 36% 2%, 3%);
+                }       
+            }  
+        } 
+        .contenedor-img {
+            width: 100%;
+            .img-formulario {
+            width: 100%;
+            height: 832px;
+            }            
+        }
+    }
+}

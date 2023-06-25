@@ -1,0 +1,42 @@
+.contenedor-main {
+    position: relative;
+    margin: $margin-mobile;
+    .texto {
+        position: absolute;
+        text-align: center;
+        z-index: 1;
+        @include posicionamiento(35%, 50%, -50%, -50%);
+        .titulo {
+            @include font-styles("$font", 36px, 700);
+            color: map-get($color-textos, primario);
+            .subrayado {
+                text-decoration: underline;
+            }            
+        } 
+        .eslogan {
+            @include font-styles("$font", 16px, 400);
+            color: map-get($color-textos, primario);
+        }               
+    }
+    .imagenprincipal {
+        width: 100%;
+        z-index: 2;
+        border-radius: $border_radius-stylepage;
+    }   
+}
+/* VISTA DESKTOP */
+@media (min-width: 992px) {
+    .contenedor-main {
+        margin: $margin-desktop;
+        .texto {
+            top: 25%;
+            .titulo {
+                font-size: 72px;
+            }  
+            .eslogan {
+                font-size: 28px;
+                text-align: end;
+            }      
+        }
+    }
+}

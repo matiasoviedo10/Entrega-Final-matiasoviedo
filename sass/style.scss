@@ -1,0 +1,16 @@
+/* UTILS */
+@import './utils/variables';
+@import './utils/mixin';
+
+/* HEADER */
+@import './layout/navegador';
+
+/* MAIN */
+@import './layout/banner-principal';
+@import './layout/carousel';
+
+/* ASIDE */
+@import './layout/aside';
+
+/* FOOTER */
+@import './layout/footer';  

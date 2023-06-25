@@ -1,0 +1,15 @@
+/* UTILS */
+@import './utils/variables';
+@import './utils/mixin';
+
+/* HEADER */
+@import './layout/navegador';
+
+/* MAIN */
+@import './layout/formulario';
+
+/* ASIDE */
+@import './layout/aside';
+
+/* FOOTER */
+@import './layout/footer';

@@ -1,0 +1,88 @@
+.contenedorservicios {
+    @include display-style-items(grid, center, end);
+    grid-template-columns: 1fr;
+    position: relative;
+    margin: $margin-mobile;
+    .contenedorservicios2 {
+    @include display-style-content(flex, center, center);
+    flex-direction: column;
+    @include margin-padding-style(9% 2%, 0% 10%);
+    position: absolute;
+        .servicio {
+            @include margin-padding-style(2px, 14px);
+            color: map-get($color-textos, primario);
+            @include font-styles("$font", 36px, 700);
+            text-align: center;
+        }
+        .descripcionservicio {
+            text-align: center;
+            @include font-styles("$font", 16px, 400);
+            color: map-get($color-textos, primario);
+        } 
+        .botonreserva {
+            background-color: map-get($color-fondo-boton , boton-carousel);
+            color: map-get($color-fondo-boton, boton-texto-2);
+            @include margin-padding-style(1px, 8px 12px);
+            @include font-styles("$font", 16px, bold);
+            @include border-b_radius-style(none, 100px);
+            cursor: pointer;
+            list-style: none;
+        }                       
+    }
+    .a {
+    @include text_decoracion-list_style(none, none);
+    } 
+    .imagenservicios {
+    @include border-b_radius-style(none, 20px);
+    } 
+}
+.contenedorservicios1 {
+    @extend .contenedorservicios;
+    display: none;
+    .contenedorservicios2 {
+    @extend .contenedorservicios2;
+        .servicio {
+            @extend .servicio;
+        }
+        .descripcionservicio {
+            @extend .descripcionservicio;
+        } 
+        .botonreserva {
+            @extend .botonreserva;
+        }                       
+    }
+    .a {
+    @extend .a;
+    } 
+    .imagenservicios {
+        @extend .imagenservicios;
+    }               
+}
+
+/* VISTA DESKTOP */
+@media (min-width: 992px) {
+    .contenedor-servicios {
+        @include display-style-content(flex, center, center);
+        margin: $margin-desktop;
+        @include border-b_radius-style(solid map-get($color-fondos, primario) 2px, 20px);
+        .contenedorservicios {
+            @include margin-padding-style(2% 2% 2% 4%, 0%);
+            .contenedorservicios2 {
+                @include margin-padding-style(2% 3%, 1% 5%);
+                .servicio {
+                    font-size: 36px;
+                }           
+            }
+        }
+        .contenedorservicios1 {
+            display: grid;
+            @include margin-padding-style(2% 4% 2% 2%, 0%);
+            .contenedorservicios2 {
+                .servicio {
+                    font-size: 36px;
+                }
+            }
+        }
+    }
+}
+
